@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dominica News - Professional color scheme inspired by the flag */
+    --background: 0 0% 98%;
+    --foreground: 150 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 15% 15%;
+
+    /* Deep green - primary color from Dominica flag */
+    --primary: 150 50% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light green background for secondary elements */
+    --secondary: 150 30% 95%;
+    --secondary-foreground: 150 50% 28%;
+
+    /* Muted backgrounds */
+    --muted: 150 10% 96%;
+    --muted-foreground: 150 8% 45%;
+
+    /* Yellow accent from flag */
+    --accent: 45 95% 50%;
+    --accent-foreground: 150 50% 15%;
+
+    /* Red for important actions/highlights */
+    --destructive: 0 75% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 88%;
+    --input: 150 15% 92%;
+    --ring: 150 50% 28%;
+
+    --radius: 0.5rem;
+
+    /* Custom design tokens */
+    --header-bg: 0 0% 100%;
+    --news-hover: 150 50% 96%;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .dark {
+    --background: 150 25% 8%;
+    --foreground: 150 10% 95%;
+
+    --card: 150 20% 12%;
+    --card-foreground: 150 10% 95%;
+
+    --popover: 150 20% 12%;
+    --popover-foreground: 150 10% 95%;
+
+    --primary: 150 45% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 20% 18%;
+    --secondary-foreground: 150 10% 95%;
+
+    --muted: 150 15% 20%;
+    --muted-foreground: 150 8% 65%;
+
+    --accent: 45 90% 55%;
+    --accent-foreground: 150 25% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 25%;
+    --input: 150 15% 25%;
+    --ring: 150 45% 45%;
+
+    --header-bg: 150 20% 12%;
+    --news-hover: 150 20% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
